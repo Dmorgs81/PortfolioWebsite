@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Portfolio</title>
+    <title>David's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,33 +14,34 @@
                 <h1>David's Portfolio</h1>
                 <nav>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#profile" onclick="showSection('profile')">Profile</a></li>
+                        <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+                        <li><a href="#publications" onclick="showSection('publications')">Publications</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <section id="about" class="section">
+    <section id="profile" class="section">
         <div class="container">
-            <div class="about-content">
+            <div class="section-content">
                 <div class="image">
                     <img src="david2.png" alt="David" />
                 </div>
                 <div class="text">
                     <h2>Hi, I'm David!</h2>
-                    <p>I'm a passionate developer, problem solver, and enthusiast of clean code. I specialize in C programming, algorithm design, and software development. Check out some of my projects below!</p>
+                    <p>I'm a passionate developer and software engineer with a focus on C programming, problem-solving, and clean code. I have a keen interest in algorithm design and creating practical, impactful software solutions.</p>
+                    <h3>Contact Info</h3>
+                    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="section">
+    <section id="projects" class="section">
         <div class="container">
             <h2>My Projects</h2>
-
             <div class="project">
                 <h3>C Program 1: Linked List Implementation</h3>
                 <p>Implementing a dynamic linked list in C that supports basic operations such as insertion, deletion, and traversal.</p>
@@ -61,16 +62,20 @@
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="publications" class="section">
         <div class="container">
-            <h2>Contact</h2>
-            <p>If you'd like to collaborate or just have a conversation, feel free to reach out to me!</p>
-            <form id="contact-form">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            <h2>Publications & Research</h2>
+            <div class="publication">
+                <h3>Research Paper 1: Efficient Sorting Techniques</h3>
+                <p>This paper discusses the effectiveness of various sorting algorithms under different conditions, focusing on memory usage and runtime performance.</p>
+                <a href="https://yourlinktoarticle.com" target="_blank">Read More</a>
+            </div>
+
+            <div class="publication">
+                <h3>Blog Post: The Future of C Programming</h3>
+                <p>A deep dive into why C remains relevant today and how it continues to be used in the development of critical systems and applications.</p>
+                <a href="https://yourlinktoblog.com" target="_blank">Read More</a>
+            </div>
         </div>
     </section>
 
