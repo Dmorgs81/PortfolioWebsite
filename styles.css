@@ -1,136 +1,113 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* styles.css */
 
+/* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
     color: #333;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    background-attachment: fixed;
     line-height: 1.6;
-    background: linear-gradient(180deg, #6a11cb 0%, #2575fc 100%);
-    scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
-/* Header */
 header {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
+    background: #1e3c72;
+    color: #fff;
     padding: 1rem 0;
-    position: fixed;
-    width: 100%;
+    text-align: center;
+    position: sticky;
+    top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
-    font-size: 1.8rem;
-    margin-left: 2rem;
-    display: inline-block;
-}
-
-header nav {
-    float: right;
-    margin-right: 2rem;
+    margin: 0;
+    font-size: 2rem;
 }
 
 header nav ul {
     list-style: none;
+    padding: 0;
     display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-header nav ul li {
-    margin: 0 1rem;
-}
-
-header nav ul li a {
+header nav a {
+    color: #fff;
     text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-header nav ul li a:hover {
-    color: #1abc9c;
+header nav a:hover {
+    color: #ffa500;
 }
 
-/* Sections */
 .section {
-    display: none;
-    min-height: 100vh;
-    padding: 5rem 2rem;
-    color: white;
-    animation: fadeIn 0.5s ease;
+    padding: 3rem 1rem;
+    margin: 0 auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
-.section.active {
-    display: block;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Profile Section */
-.profile-content {
+.container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
-.profile-img {
-    width: 250px;
-    height: 250px;
+.profile-image {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 3px solid #1e3c72;
+    margin-bottom: 1.5rem;
 }
 
-.profile-content div {
-    max-width: 600px;
-}
-
-.profile-content h2 {
-    font-size: 2.2rem;
+.bio h2 {
+    font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
-.profile-content p {
+.bio p {
     margin-bottom: 0.5rem;
-}
-
-/* Card Styles */
-.projects-list, .publications-list {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.project-card, .publication-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 1.5rem;
-    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
 }
 
-.project-card:hover, .publication-card:hover {
-    transform: translateY(-10px);
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
 }
 
-footer {
+li {
+    margin-bottom: 1.5rem;
+}
+
+li h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #1e3c72;
+}
+
+a {
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffa500;
+}
+
+.footer {
     text-align: center;
-    padding: 1.5rem 0;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    font-size: 0.9rem;
+    padding: 1rem;
+    background: #1e3c72;
+    color: #fff;
 }
