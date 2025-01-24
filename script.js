@@ -1,15 +1,22 @@
-// Example of basic contact form validation
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
+// Function to show specific sections when clicked
+function showSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
 
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
+    // Show the clicked section
+    const section = document.getElementById(sectionId);
+    section.style.display = 'block';
 
-    if (name && email && message) {
-        alert('Thank you for your message! We will get back to you soon.');
-        // Here, you could also send the form data to a backend (e.g., using Fetch API)
-    } else {
-        alert('Please fill out all fields.');
-    }
+    // Add smooth transition
+    setTimeout(() => {
+        section.style.opacity = '1';
+    }, 50);
+}
+
+// Initial Section Load
+document.addEventListener("DOMContentLoaded", () => {
+    showSection('profile'); // Show Profile section by default
 });
