@@ -4,79 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>David's Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#profile" onclick="showSection('profile')">Profile</a></li>
-                    <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
-                    <li><a href="#publications" onclick="showSection('publications')">Publications</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>David's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <!-- Profile Section -->
-        <section id="profile" class="section active">
-            <div class="container">
-                <div class="profile-content">
-                    <img src="david2.png" alt="David" class="profile-img">
-                    <div>
-                        <h2>Hi, I'm David!</h2>
-                        <p>
-                            Passionate developer with expertise in C programming, 
-                            algorithm design, and clean code. I love tackling challenging problems 
-                            and creating impactful software solutions.
-                        </p>
-                        <h3>Contact Info:</h3>
-                        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-                    </div>
-                </div>
+    <section id="profile" class="section">
+        <div class="container">
+            <img src="david2.png" alt="David" class="profile-image">
+            <div class="bio">
+                <h2>Hi, I'm David Morgensztern!</h2>
+                <p>I'm a Computer Science student at the University of Missouri Columbia.</p>
+                <p>I have expertise in Python, HTML, CSS, Java, Calculus, Excel, and some AI development.</p>
+                <p>I'm passionate about Software Development, Cybersecurity, and AI.</p>
+                <p><strong>Contact Info:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>My Projects</h2>
-                <div class="projects-list">
-                    <div class="project-card">
-                        <h3>Linked List Implementation</h3>
-                        <p>A dynamic linked list in C with basic operations like insertion, deletion, and traversal.</p>
-                        <a href="https://github.com/yourusername/linked-list" target="_blank">View on GitHub</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Sorting Algorithms</h3>
-                        <p>Efficient sorting algorithms (bubble, quick, merge) with performance benchmarks.</p>
-                        <a href="https://github.com/yourusername/sorting-algorithms" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <ul>
+            <li>
+                <h3>Linked List Implementation</h3>
+                <p>A dynamic linked list in C with basic operations like insertion, deletion, and traversal.</p>
+                <a href="https://github.com/your-github/linked-list" target="_blank">View on GitHub</a>
+            </li>
+            <li>
+                <h3>Sorting Algorithms</h3>
+                <p>Efficient sorting algorithms (bubble, quick, merge) with performance benchmarks.</p>
+                <a href="https://github.com/your-github/sorting-algorithms" target="_blank">View on GitHub</a>
+            </li>
+        </ul>
+    </section>
 
-        <!-- Publications Section -->
-        <section id="publications" class="section">
-            <div class="container">
-                <h2>Publications & Research</h2>
-                <div class="publications-list">
-                    <div class="publication-card">
-                        <h3>Efficient Sorting Techniques</h3>
-                        <p>Exploring various sorting algorithms with a focus on memory usage and performance.</p>
-                        <a href="https://yourlinktoarticle.com" target="_blank">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    <section id="publications" class="section">
+        <h2>Publications & Research</h2>
+        <ul>
+            <li>
+                <h3>Efficient Sorting Techniques</h3>
+                <p>Exploring various sorting algorithms with a focus on memory usage and performance.</p>
+                <a href="https://example.com/sorting-techniques" target="_blank">Read More</a>
+            </li>
+        </ul>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 David | All Rights Reserved</p>
+    <footer class="footer">
+        <p>&copy; 2025 David Morgensztern | All Rights Reserved</p>
     </footer>
 </body>
 </html>
