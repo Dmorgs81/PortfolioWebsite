@@ -1,9 +1,6 @@
 function showSection(sectionId) {
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(section => section.classList.remove('active'));
+    document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+    });
     document.getElementById(sectionId).classList.add('active');
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    showSection('profile'); // Show profile by default
-});
