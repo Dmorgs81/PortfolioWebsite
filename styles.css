@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,124 +6,111 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
     color: #333;
-    padding-top: 70px;
-    transition: background-color 0.3s;
+    scroll-behavior: smooth;
+    background: linear-gradient(to bottom, #3498db, #2980b9);
 }
 
 /* Header */
 header {
-    background-color: #3498db;
-    color: #fff;
-    padding: 20px 0;
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
 }
 
-.header-content {
+header h1 {
+    margin-left: 20px;
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
 }
 
-h1 {
-    font-size: 2rem;
-    font-weight: 700;
+header nav ul li {
+    margin: 0 15px;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #16a085;
+header nav ul li a:hover {
+    color: #1abc9c;
 }
 
-/* Section Layout */
+/* Sections */
 .section {
-    padding: 80px 0;
     display: none;
-    transition: opacity 0.3s ease-in-out;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
 }
 
-.section-content {
+.section.active {
+    display: block;
+}
+
+/* Profile Section */
+.profile-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    max-width: 1200px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #34495e;
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
 }
 
-.project, .publication {
-    background-color: #fff;
-    padding: 30px;
-    margin: 15px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+/* Projects and Publications */
+.projects-list, .publications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card, .publication-card {
+    background: #1e272e;
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
 }
 
-.project:hover, .publication:hover {
+.project-card:hover, .publication-card:hover {
     transform: translateY(-10px);
 }
 
-.project a, .publication a {
+a {
+    text-decoration: none;
     color: #1abc9c;
     font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s;
 }
 
-.project a:hover, .publication a:hover {
-    color: #16a085;
-}
-
-.image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Gradient Background Effect */
-body {
-    background: linear-gradient(to bottom, #3498db, #2980b9);
-}
-
-body.scrolled {
-    background: linear-gradient(to bottom, #2980b9, #3498db);
-}
-
-/* Footer */
 footer {
-    background-color: #3498db;
-    color: #fff;
-    padding: 20px 0;
     text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
 }
