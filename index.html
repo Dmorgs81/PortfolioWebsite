@@ -3,30 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Your Portfolio</title>
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="intro">
-        <h1>Welcome to My Portfolio!</h1>
-        <p>Hi, I'm [Your Name], a web developer passionate about creating amazing websites!</p>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate software developer with experience in C programming and various other languages. I love solving complex problems and building efficient solutions. Check out some of my projects below!</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>My Projects</h2>
+
+            <div class="project">
+                <h3>C Program 1: Linked List Implementation</h3>
+                <p>This project involves implementing a basic linked list in C. It demonstrates the use of dynamic memory allocation and pointer manipulation.</p>
+                <a href="https://github.com/yourusername/linked-list" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project">
+                <h3>C Program 2: Sorting Algorithms</h3>
+                <p>A C implementation of various sorting algorithms (bubble sort, quick sort, merge sort) with performance analysis.</p>
+                <a href="https://github.com/yourusername/sorting-algorithms" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project">
+                <h3>C Program 3: File Compression</h3>
+                <p>This project compresses and decompresses files using Huffman coding in C. It includes a command-line interface for ease of use.</p>
+                <a href="https://github.com/yourusername/file-compression" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to work together or just want to chat, feel free to reach out!</p>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Your Name | All Rights Reserved</p>
+        </div>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
