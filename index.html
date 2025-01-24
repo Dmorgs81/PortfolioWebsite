@@ -3,86 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>David's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="header-content">
-                <h1>David's Portfolio</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#profile" onclick="showSection('profile')">Profile</a></li>
-                        <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
-                        <li><a href="#publications" onclick="showSection('publications')">Publications</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <h1>David's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#profile" onclick="showSection('profile')">Profile</a></li>
+                    <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+                    <li><a href="#publications" onclick="showSection('publications')">Publications</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section id="profile" class="section">
+    <!-- Profile Section -->
+    <section id="profile" class="section active">
         <div class="container">
-            <div class="section-content">
-                <div class="image">
-                    <img src="david2.png" alt="David" />
-                </div>
-                <div class="text">
+            <div class="profile-content">
+                <img src="david2.png" alt="David" class="profile-img">
+                <div>
                     <h2>Hi, I'm David!</h2>
-                    <p>I'm a passionate developer and software engineer with a focus on C programming, problem-solving, and clean code. I have a keen interest in algorithm design and creating practical, impactful software solutions.</p>
-                    <h3>Contact Info</h3>
+                    <p>
+                        Passionate developer with expertise in C programming, 
+                        algorithm design, and clean code. I love tackling challenging problems 
+                        and creating impactful software solutions.
+                    </p>
+                    <h3>Contact Info:</h3>
                     <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
             <h2>My Projects</h2>
-            <div class="project">
-                <h3>C Program 1: Linked List Implementation</h3>
-                <p>Implementing a dynamic linked list in C that supports basic operations such as insertion, deletion, and traversal.</p>
-                <a href="https://github.com/yourusername/linked-list" target="_blank">View on GitHub</a>
-            </div>
-
-            <div class="project">
-                <h3>C Program 2: Sorting Algorithms</h3>
-                <p>Different sorting algorithms (bubble, quick, merge) implemented in C with performance benchmarks.</p>
-                <a href="https://github.com/yourusername/sorting-algorithms" target="_blank">View on GitHub</a>
-            </div>
-
-            <div class="project">
-                <h3>C Program 3: File Compression</h3>
-                <p>Implementing file compression and decompression using Huffman Coding in C. Includes a user-friendly command-line interface.</p>
-                <a href="https://github.com/yourusername/file-compression" target="_blank">View on GitHub</a>
+            <div class="projects-list">
+                <div class="project-card">
+                    <h3>Linked List Implementation</h3>
+                    <p>A dynamic linked list in C with basic operations like insertion, deletion, and traversal.</p>
+                    <a href="https://github.com/yourusername/linked-list" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Sorting Algorithms</h3>
+                    <p>Efficient sorting algorithms (bubble, quick, merge) with performance benchmarks.</p>
+                    <a href="https://github.com/yourusername/sorting-algorithms" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>File Compression</h3>
+                    <p>File compression and decompression using Huffman Coding in C.</p>
+                    <a href="https://github.com/yourusername/file-compression" target="_blank">View on GitHub</a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Publications Section -->
     <section id="publications" class="section">
         <div class="container">
             <h2>Publications & Research</h2>
-            <div class="publication">
-                <h3>Research Paper 1: Efficient Sorting Techniques</h3>
-                <p>This paper discusses the effectiveness of various sorting algorithms under different conditions, focusing on memory usage and runtime performance.</p>
-                <a href="https://yourlinktoarticle.com" target="_blank">Read More</a>
-            </div>
-
-            <div class="publication">
-                <h3>Blog Post: The Future of C Programming</h3>
-                <p>A deep dive into why C remains relevant today and how it continues to be used in the development of critical systems and applications.</p>
-                <a href="https://yourlinktoblog.com" target="_blank">Read More</a>
+            <div class="publications-list">
+                <div class="publication-card">
+                    <h3>Efficient Sorting Techniques</h3>
+                    <p>Exploring various sorting algorithms with a focus on memory usage and performance.</p>
+                    <a href="https://yourlinktoarticle.com" target="_blank">Read More</a>
+                </div>
+                <div class="publication-card">
+                    <h3>The Future of C Programming</h3>
+                    <p>A deep dive into C's relevance in modern systems development.</p>
+                    <a href="https://yourlinktoblog.com" target="_blank">Read More</a>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 David | All Rights Reserved</p>
-        </div>
+        <p>&copy; 2025 David | All Rights Reserved</p>
     </footer>
 
     <script src="script.js"></script>
